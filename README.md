@@ -50,6 +50,8 @@ The dataset contains approximately **7,043 customer records** with information a
 ## Methodology
 
 ### 1. Exploratory Data Analysis
+### Churn Rate by Contract Type
+![Churn Rate by Contract Type](images/churn_by_contract.png)
 
 Investigated customer churn patterns across contract types, tenure, monthly charges, internet services, and additional subscription features.
 
@@ -79,6 +81,8 @@ Used a stratified data split to preserve the churn distribution:
 The test dataset remained untouched during model selection and threshold optimization.
 
 ### 4. Model Development
+### Neural Network Training History
+![Neural Network Training History](images/training_history.png)
 
 **Logistic Regression**
 
@@ -109,6 +113,8 @@ Evaluated both models using:
 Optimized classification thresholds using validation F1-score to balance precision and recall.
 
 ## Model Comparison
+### Validation Model Comparison
+![Model Comparison](images/model_comparison.png)
 
 | Model | Optimal Threshold | Validation F1-score |
 |---|---:|---:|
@@ -122,6 +128,8 @@ Using a predefined selection rule requiring an improvement greater than 0.01 to 
 This illustrates that a more complex model does not necessarily provide a meaningful practical improvement over a simpler baseline.
 
 ## Final Test Results
+### Final Test Confusion Matrix
+![Confusion Matrix](images/final_confusion_matrix.png)
 
 **Selected Model:** Logistic Regression
 
